@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Level-UP Tienda</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<!-- ENCABEZADO -->
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm fixed-top">
+    <div class="container">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img src="img/logo.png" alt="Logo" width="40" height="40" class="me-2">
+            <span class="brand-text">Level-UP Store</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Inicio</a></li>
+                <li class="nav-item"><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+            <button class="btn btn-accent ms-3" onclick="window.location.href='registro.html'" >Registrarse</button>
+            <a href="carrito.html" class="btn btn-neon ms-2"><i class="fa-solid fa-cart-shopping custom-cart"></i></a>
+        </div>
+    </div>
+</nav>
+</header>
+
+<!-- SECCION PRINCIPAL -->
+<section id="hero" class="position-relative text-center d-flex align-items-center justify-content-center" style="height:90vh;">
+    <video autoplay muted loop playsinline class="position-absolute w-100 h-100 object-fit-cover">
+        <source src="img/video.mp4" type="video/mp4">
+    </video>
+    <div class="position-absolute w-100 h-100" style="background: rgba(0,0,0,0.6);"></div>
+    <div class="position-relative container text-light">
+        <h1 class="display-4 fw-bold" style="font-family: 'Orbitron', sans-serif;">Los mejores productos para ti GAMER</h1>
+        <p class="lead mt-3">Encuentra los mejores accesorios y productos desde la comodidad de tu casa</p>
+        <a href="catalogo.html" class="btn btn-accent btn-lg mt-4">Ver Catálogo</a>
+    </div>
+</section>
+
+<!-- PRODUCTOS -->
+<main id="productos" class="categorias-destacadas my-5">
+    <div class="container">
+        <h2 class="text-center mb-5" style="font-family: 'Orbitron', sans-serif;">Productos Destacados</h2>
+        
+        <!-- CARRUSEL -->
+
+        <div id="productosCarrusel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- ps5-->
+                 <div class="carousel-item active">
+                    <div class="card mx-auto bg-dark text-light shadow-sm" style="max-width: 400px;">
+                        <img src="img/PS5-CARD.png" class="card-img-top" alt="PlayStation 5">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold"> PlayStation 5 </h5>
+                            <p class="card-text"> Consola Sony PlayStation 5 Slim</p>
+                            <p class="card-text fw-bold">$549.990 CLP</p>
+                            <button class="btn btn-accent ">Agregar al carrito</button>
+                        </div>
+
+                    </div>
+                 </div>
+
+                <!-- Silla Gamer -->
+                <div class="carousel-item">
+                <div class="card mx-auto bg-dark text-light shadow-sm" style="max-width: 400px;">
+                    <img src="img/sillas.png" class="card-img-top" alt="Silla Gamer">
+                    <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Silla Gamer Secretlab Titan</h5>
+                    <p class="card-text">Comodidad para varias horas de juego.</p>
+                    <p class="card-text fw-bold">$349.990 CLP</p>
+                    <button class="btn btn-accent">Agregar al carrito</button>
+                    </div>
+                </div>
+                </div>
+
+                <!-- LEGO STARS WARS -->
+                <div class="carousel-item">
+                <div class="card mx-auto bg-dark text-light shadow-sm" style="max-width: 400px;">
+                    <img src="img/STAR-WARS-CARD.png" class="card-img-top" alt="Silla Gamer">
+                    <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">LA ESTRELLA DE LA MUERTE</h5>
+                    <p class="card-text">Se le cayo al edu.</p>
+                    <p class="card-text fw-bold">$699.990 CLP</p>
+                    <button class="btn btn-accent">Agregar al carrito</button>
+                    </div>
+                </div>
+                </div>
+
+                <!-- LEGO FIGURA -->
+                <div class="carousel-item">
+                <div class="card mx-auto bg-dark text-light shadow-sm" style="max-width: 400px;">
+                    <img src="img/lego-card.png" class="card-img-top" alt="FIGURA LEGO">
+                    <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">LEGO Hernan Figure</h5>
+                    <p class="card-text">Figura edicion limitada.</p>
+                    <p class="card-text fw-bold">$899.990 CLP</p>
+                    <button class="btn btn-accent">Agregar al carrito</button>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Controles del Carrusel -->
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#productosCarrusel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#productosCarrusel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<section id="blog" class="py-5 bg-dark">
+    <div class="container">
+        <h2 class="text-center mb-5" style="font-family: 'Orbitron', sans-serif;">Blog y Novedades</h2>
+        <div class="row g-4">
+
+            <article class="col-md-4">
+                <div class="card h-100 bg-secondary text-light">
+                    <img src="img/blog1.jpg" class="card-img-top" alt="Blog 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Tips para gamers</h5>
+                        <p class="card-text">Mejora tu rendimiento en los videojuegos con estos consejos.</p>
+                        <a href="blog.html" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-md-4">
+                <div class="card h-100 bg-secondary text-light">
+                    <img src="img/blog2.jpg" class="card-img-top" alt="Blog 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Nuevos lanzamientos</h5>
+                        <p class="card-text">Conoce los próximos videojuegos y consolas que llegarán a Chile.</p>
+                        <a href="blog.html" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </article>
+
+
+        </div>
+    </div>
+</section>
+
+
+<footer class="bg-black text-center py-4 border-top border-secondary">
+    <div class="container">
+        <p class="mb-2">&copy; 2025 Level-UP ~ DuocUC</p>
+        <a href="https://www.discord.com" class="text-light me-3"><i class="fab fa-discord fa-1x custom"></i></a>
+        <a href="https://www.youtube.com/c/Hern%C3%A1nSaavedra" class="text-light me-3"><i class="fab fa-youtube fa-1x custom"></i></a>
+        <a href="https://www.instagram.com/" class="text-light me-3"><i class="fab fa-instagram fa-1x custom"></i></a>
+        <a href="contacto.html"><i class="fa-solid fa-circle-info custom"></i></a>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

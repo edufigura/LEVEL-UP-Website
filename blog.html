@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Level-UP Blog</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+    
+    <!-- Header, debe ir arriba -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm fixed-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <img src="img/logo.png" alt="Logo" width="40" height="40" class="me-2">
+                    <span class="brand-text">Level-UP Store</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="catalogo.html" class="nav-link ">Catálogo</a></li>
+                        <li class="nav-item"><a href="blog.html" class="nav-link active">Blog</a></li>
+                        <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+                    </ul>
+                    <button class="btn btn-accent ms-3" onclick="window.location.href='registro.html'" >Registrarse</button>
+                    <a href="carrito.html" class="btn btn-neon ms-2"><i class="fa-solid fa-cart-shopping custom-cart"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cuerpo, en medio -->
+    <div class="container">
+        <div class="row">
+            <!-- Titulo página -->
+            <div class="col">
+                <h1>Noticias Importantes</h1>
+            </div>
+
+            <!-- Contenedor de Noticia -->
+            <div class="row">
+                <!-- Background -->
+                <div class="card bg-dark text-white border-secondary shadow-lg" style="width: 500px;">
+                    <br>
+                    <!-- Titulo noticia -->
+                    <h3>Stardew Valley tendrá otra actualización</h3>
+
+                    <!-- Cuerpo noticia -->
+                    <p>El creador del juego explicó que "tras la actualización 1.6 pensé en que no sabía si haría otra actualización. Pero quería compartir algo con vosotros esta noche, una especie de secreto... habrá otra actualización".</p>
+                    
+                    <!-- Botón Ver Noticia -->
+                    <button class="btn btn-accent ms-3 mx-auto" data-bs-toggle="modal" data-bs-target="#loginModal">Ver Noticia</button>
+                    <br>
+                </div>
+            </div>
+
+
+            <!-- Espacio en blanco para separar las noticias -->
+            <div class="row"><br><br></div>
+            
+            
+            <!-- Contenedor de Noticia -->
+            <div class="row">
+                <!-- Background -->
+                <div class="card bg-dark text-white border-secondary shadow-lg" style="width: 500px;">
+                    <br>
+                    <!-- Titulo noticia -->
+                    <h3>Análisis de Kirby y la tierra olvidada – Nintendo Switch 2 Edition + El mundo astral, la guinda del pastel</h3>
+
+                    <!-- Cuerpo noticia -->
+                    <p>Lo último que Kirby ha absorbido son tus excusas para no darle una oportunidad a La tierra olvidada + El mundo astral. Su Nintendo Switch 2 Edition es una de las mejores lanzadas hasta la fecha. Trae consigo una expansión con niveles de lo más vistosos y un chute de fluidez y resolución sin el que ya no podemos vivir. Al juego ahora da gusto verlo y entran aún más ganas de reivindicarlo como uno de los mejores del personaje y un plataformas imprescindible. El salto de nuestra bola rosa favorita a las 3D es uno de los más exitosos de la historia reciente. Para que os hagáis una idea de su calidad, decir que no anda muy lejos de dos obras maestras como Donkey Kong Bananza o Super Mario Odyssey no es ninguna tontería. Apenas les separa una chispita de originalidad, de magia, de variedad y desafío en sus contenidos. Como HAL Laboratory sume estos ingredientes en una futura entrega, cuidado...</p>
+                    
+                    <!-- Botón Ver Noticia -->
+                    <button class="btn btn-accent ms-3 mx-auto" data-bs-toggle="modal" data-bs-target="#loginModal">Ver Noticia</button>
+                    <br> <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- Footer, debe ir abajo -->
+    <footer class="bg-black text-center py-4 border-top border-secondary">
+        <div class="container">
+            <p class="mb-2">&copy; 2025 Level-UP ~ DuocUC</p>
+            <a href="https://www.discord.com" class="text-light me-3"><i class="fab fa-discord fa-1x custom"></i></a>
+            <a href="https://www.youtube.com/c/Hern%C3%A1nSaavedra" class="text-light me-3"><i class="fab fa-youtube fa-1x custom"></i></a>
+            <a href="https://www.instagram.com/" class="text-light me-3"><i class="fab fa-instagram fa-1x custom"></i></a>
+            <a href="contacto.html"><i class="fa-solid fa-circle-info custom"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

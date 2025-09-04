@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Level-UP Perfil</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/perfil.css">
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm fixed-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <img src="img/logo.png" alt="Logo" width="40" height="40" class="me-2">
+                    <span class="brand-text">Level-UP Store</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+                        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+                        <li class="nav-item"><a href="perfil.html" class="nav-link active">Mi Perfil</a></li>
+                    </ul>
+                    <a href="login.html" class="btn btn-outline-light ms-3">
+                        <i class="fas fa-sign-out-alt me-2"></i>Salir
+                    </a>
+                    <a href="carrito.html" class="btn btn-neon ms-2"><i class="fa-solid fa-cart-shopping custom-cart"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- Profile Sidebar -->
+            <div class="col-lg-4 mb-4">
+                <div class="card bg-dark text-white border-secondary">
+                    <div class="card-body text-center">
+                        <div class="position-relative d-inline-block mb-3">
+                            <img src="https://via.placeholder.com/120x120/1E90FF/fff?text=AG" alt="Avatar" class="rounded-circle border border-primary border-3" width="120" height="120">
+                            <span class="position-absolute bottom-0 end-0 bg-primary rounded-circle p-2">
+                                <i class="fas fa-camera text-white small"></i>
+                            </span>
+                        </div>
+                        
+                        <h4 class="brand-text mb-1">Alex Gaming</h4>
+                        <p class="text-muted mb-3">
+                            <i class="fas fa-trophy me-1"></i>Gamer Pro - Nivel 25
+                        </p>
+
+                        <button class="btn btn-accent w-100 mb-2">
+                            <i class="fas fa-edit me-2"></i>Editar Perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Content -->
+            <div class="col-lg-8">
+                <!-- Personal Information -->
+                <div class="card bg-dark text-white border-secondary mb-4">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="brand-text mb-0">
+                            <i class="fas fa-user me-2"></i>Información Personal
+                        </h5>
+                        <button class="btn btn-sm btn-outline-primary">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label text-muted">Nombre Completo</label>
+                                    <input type="text" class="form-control bg-secondary text-white border-0" value="Alex Gaming" readonly>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label text-muted">Email</label>
+                                    <input type="email" class="form-control bg-secondary text-white border-0" value="alex@gaming.com" readonly>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label text-muted">Teléfono</label>
+                                    <input type="tel" class="form-control bg-secondary text-white border-0" value="+56 9 1234 5678" readonly>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label text-muted">Fecha de Registro</label>
+                                    <input type="text" class="form-control bg-secondary text-white border-0" value="15 Enero 2023" readonly>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label class="form-label text-muted">Biografía</label>
+                                    <textarea class="form-control bg-secondary text-white border-0" rows="3" readonly>Gamer apasionado desde hace más de 10 años. Especializado en FPS y RPGs. Siempre buscando los mejores periféricos para mejorar mi gameplay.</textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Gaming Preferences -->
+                <div class="card bg-dark text-white border-secondary mb-4">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="brand-text mb-0">
+                            <i class="fas fa-gamepad me-2"></i>Preferencias Gaming
+                        </h5>
+                        <button class="btn btn-sm btn-outline-primary">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label text-muted">Juego Favorito</label>
+                                <input type="text" class="form-control bg-secondary text-white border-0" value="Counter-Strike 2" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label text-muted">Plataforma Principal</label>
+                                <input type="text" class="form-control bg-secondary text-white border-0" value="PC (Steam)" readonly>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label class="form-label text-muted">Géneros Favoritos</label>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-primary fs-6 px-3 py-2">
+                                        <i class="fas fa-crosshairs me-1"></i>FPS
+                                    </span>
+                                    <span class="badge bg-primary fs-6 px-3 py-2">
+                                        <i class="fas fa-dragon me-1"></i>RPG
+                                    </span>
+                                    <span class="badge bg-primary fs-6 px-3 py-2">
+                                        <i class="fas fa-users me-1"></i>MOBA
+                                    </span>
+                                    <span class="badge bg-primary fs-6 px-3 py-2">
+                                        <i class="fas fa-parachute-box me-1"></i>Battle Royale
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-black text-center py-4 border-top border-secondary">
+            <div class="container">
+                <p class="mb-2">&copy; 2025 Level-UP ~ DuocUC</p>
+                <a href="https://www.discord.com" class="text-light me-3"><i class="fab fa-discord fa-1x custom"></i></a>
+                <a href="https://www.youtube.com/c/Hern%C3%A1nSaavedra" class="text-light me-3"><i class="fab fa-youtube fa-1x custom"></i></a>
+                <a href="https://www.instagram.com/" class="text-light me-3"><i class="fab fa-instagram fa-1x custom"></i></a>
+                <a href="contacto.html"><i class="fa-solid fa-circle-info custom"></i></a>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

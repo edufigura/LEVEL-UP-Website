@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Level-UP Registro</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm fixed-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <img src="img/logo.png" alt="Logo" width="40" height="40" class="me-2">
+                    <span class="brand-text">Level-UP Store</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+                        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+                    </ul>
+                    <button class="btn btn-accent ms-3" onclick="window.location.href='registro.html'" >Registrarse</button>
+                    <a href="carrito.html" class="btn btn-neon ms-2"><i class="fa-solid fa-cart-shopping custom-cart"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>|
+
+    <!-- MAIN CONTENT -->
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card bg-dark text-white border-secondary shadow-lg">
+                    <div class="card-body p-5">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-user-plus fa-3x mb-3" style="color: #1E90FF;"></i>
+                            <h2 class="brand-text">Crear Cuenta</h2>
+                            <p class="text-muted">Únete a la comunidad gamer</p>
+                        </div>
+
+                        <form action="login.html" method="post">
+
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">
+                                    <i class="fas fa-envelope me-2"></i>Nombre
+                                </label>
+                                <input type="nombre" class="form-control bg-secondary text-white border-0" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">
+                                    <i class="fas fa-envelope me-2"></i>Email
+                                </label>
+                                <input type="email" class="form-control bg-secondary text-white border-0" id="email" name="email" placeholder="tu@email.com" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="fecha_nacimiento" class="form-label">
+                                    <i class="fas fa-calendar me-2"></i>Fecha de Nacimiento
+                                </label>
+                                <input type="date" class="form-control bg-secondary text-white border-0" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="password" class="form-label">
+                                        <i class="fas fa-lock me-2"></i>Contraseña
+                                    </label>
+                                    <input type="password" class="form-control bg-secondary text-white border-0" id="password" name="password" placeholder="Tu contraseña" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="confirm_password" class="form-label">
+                                        <i class="fas fa-lock me-2"></i>Confirmar
+                                    </label>
+                                    <input type="password" class="form-control bg-secondary text-white border-0" id="confirm_password" name="confirm_password" placeholder="Repite la contraseña" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="terminos" name="terminos" required>
+                                <label class="form-check-label" for="terminos">
+                                    Acepto los <a href="#" class="text-info">términos y condiciones</a>
+                                </label>
+                            </div>
+
+                            <button type="submit"  class="btn btn-accent w-100 py-2 mb-3">
+                                <i class="fas fa-rocket me-2"></i>Crear Mi Cuenta
+                            </button>
+                        </form>
+
+                        <hr class="my-4 border-secondary">
+
+                        <div class="text-center">
+                            <p class="text-muted mb-2">¿Ya tienes cuenta?</p>
+                            <a href="login.html" class="btn btn-outline-light w-100">
+                                <i class="fas fa-sign-in-alt me-2"></i>Iniciar Sesión
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-black text-center py-4 border-top border-secondary">
+        <div class="container">
+            <p class="mb-2">&copy; 2025 Level-UP ~ DuocUC</p>
+            <a href="https://www.discord.com" class="text-light me-3"><i class="fab fa-discord fa-1x custom"></i></a>
+            <a href="https://www.youtube.com/c/Hern%C3%A1nSaavedra" class="text-light me-3"><i class="fab fa-youtube fa-1x custom"></i></a>
+            <a href="https://www.instagram.com/" class="text-light me-3"><i class="fab fa-instagram fa-1x custom"></i></a>
+            <a href="contacto.html"><i class="fa-solid fa-circle-info custom"></i></a>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+
+
+</script>
+</body>
+</html>
